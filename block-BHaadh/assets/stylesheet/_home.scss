@@ -1,0 +1,81 @@
+body{
+    background-color:#00d2ff ;
+
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.section_one{
+    border: 1px solid black;
+    width: 80%;
+    // height: 400px;
+    margin: 6rem auto;
+}
+.box{
+    background-color: red;
+    margin: 2rem;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.b1{
+   &:hover{
+    transform: rotate(180deg);
+    background-color: green;
+   }
+}
+.b2{
+    &:hover{
+        transform: rotate(45deg);
+        transform-origin: left top;
+        background-color: teal;
+    }
+}
+.b3{
+    &:hover{
+        transform: rotateY(360deg );
+        background-color: yellow;
+    }
+}
+
+.b4{
+    position: relative;
+    &:hover{
+        animation: myAnimation 2s linear 0.5s infinite ;
+        transform: rotate(360deg);
+    }
+}
+@keyframes myAnimation {
+    0%{
+        left:0 ;
+        top: 0;
+        background-color: red;
+        
+    }
+    25%{
+        left: 25%;
+        // top: 0;
+        background-color: hotpink;
+    }
+    50%{
+        left: 50%;
+        top: 0;
+        background-color: yellow;
+    }
+    75%{
+        left: 75%;
+        background-color: green;
+    }
+    100%{
+        left:80% ;
+        top: 30%;
+        right: 80%;
+        bottom: 30%;
+        background-color: black;
+
+    }
+}
+
