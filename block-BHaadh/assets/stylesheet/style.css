@@ -1,0 +1,192 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #00d2ff;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section_one {
+  border: 1px solid black;
+  width: 80%;
+  margin: 6rem auto;
+}
+
+.box {
+  background-color: red;
+  margin: 2rem;
+  cursor: pointer;
+  width: 220px;
+  height: 200px;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.box_img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.box img {
+  width: 90%;
+}
+
+.b1:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: green;
+}
+
+.b2:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  background-color: teal;
+}
+
+.b3:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  background-color: yellow;
+}
+
+.b4:hover {
+  -webkit-transform: perspective(200px) rotateX(45deg);
+          transform: perspective(200px) rotateX(45deg);
+  background-color: yellow;
+}
+
+.b5:hover {
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  background-color: yellow;
+}
+
+.b6:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: yellow;
+}
+
+.section_ani {
+  height: 400px;
+}
+
+.b7 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.section_ani:hover .b7 {
+  -webkit-animation: slide 2s ease-in-out .5s;
+          animation: slide 2s ease-in-out .5s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 45%;
+    top: 200px;
+    border-radius: 50%;
+    background-color: hotpink;
+  }
+  100% {
+    left: 90%;
+    top: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 45%;
+    top: 200px;
+    border-radius: 50%;
+    background-color: hotpink;
+  }
+  100% {
+    left: 90%;
+    top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
